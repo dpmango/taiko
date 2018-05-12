@@ -360,6 +360,7 @@ $(document).ready(function(){
             speed: 550,
             infinite: true,
             slidesToShow: 1,
+            adaptiveHeight: true,
             slidesToScroll: 1,
             fade: true,
             cssEase: 'linear',
