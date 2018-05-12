@@ -1622,40 +1622,31 @@ html.mfp-helper body {
   -webkit-transform: translateZ(0);
 }
 
-#small-dialog {
-  background: white;
-  padding: 20px 30px;
-  text-align: left;
-  max-width: 600px;
-  margin: 40px auto;
-  position: relative;
-}
-
-.popup-buble .popup-dialog {
+.show .modal {
   opacity: 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
 }
 
-.popup-buble.mfp-ready .popup-dialog {
+.show.mfp-ready .modal {
   opacity: 1;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
 
-.popup-buble.mfp-removing .popup-dialog {
+.show.mfp-removing .modal {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
   opacity: 0;
 }
 
-.popup-buble.mfp-bg {
+.show.mfp-bg {
   background: #4ab68f;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
@@ -1663,11 +1654,11 @@ html.mfp-helper body {
   transition: opacity 0.3s ease-in-out;
 }
 
-.popup-buble.mfp-ready.mfp-bg {
+.show.mfp-ready.mfp-bg {
   opacity: 1;
 }
 
-.popup-buble.mfp-removing.mfp-bg {
+.show.mfp-removing.mfp-bg {
   opacity: 0;
 }
 
@@ -1706,6 +1697,7 @@ html.mfp-helper body {
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
   opacity: 0;
 }
+
 
 .wow {
   visibility: hidden;
@@ -3505,10 +3497,10 @@ line-height: 1.15;
 
 .show .modal {
     line-height: 1.15;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: zoomIn;
-          animation-name: zoomIn;
+  /*-webkit-animation-duration: 0.5s;*/
+  /*        animation-duration: 0.5s;*/
+  /*-webkit-animation-name: zoomIn;*/
+  /*        animation-name: zoomIn;*/
 }
 
 .modal__form {
@@ -3915,37 +3907,16 @@ line-height: 1.15;
 }
 
 .show .gallery__block {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-name: zoomIn;
-          animation-name: zoomIn;
+  /*-webkit-animation-duration: 0.5s;*/
+  /*        animation-duration: 0.5s;*/
+  /*-webkit-animation-name: zoomIn;*/
+  /*        animation-name: zoomIn;*/
 }
 
 .show .gallery__block img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.show .gallery__block {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.resize-iframe{
-  max-width: 100%;
-  margin: 0px auto;
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0px;
-}
-.resize-iframe iframe {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
 }
 
 .popup-buble.mfp-bg {
